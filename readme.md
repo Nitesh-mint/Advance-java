@@ -39,7 +39,7 @@
         <ol>
             <li><a href="#Introduction-to-Swing">Introduction to Swing</a></li>
             <li><a href="#Creating-a-frame">Creating a Frame</a></li>
-            <li><a href="Positining-a-frame">Positining a Frame</a></li>
+            <li><a href="#Positining-a-frame">Positining a Frame</a></li>
         </ol>
         </li>
       </ul>
