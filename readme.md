@@ -37,7 +37,7 @@
     <li>
       <a href="#Topics">Topics</a>
       <ul>
-        <li><a href="#unit1">Unit 1: GUI Programming</a></li>
+        <li><a href="#GUI-Programming">Unit 1: GUI Programming</a></li>
       </ul>
     </li>
   </ol>
@@ -56,7 +56,7 @@ This
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### unit1
+### GUI Programming
 First Unit
 
 <!-- MARKDOWN LINKS & IMAGES -->
