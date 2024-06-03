@@ -37,7 +37,7 @@
     <li>
       <a href="#Topics">Topics</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#unit1">Unit 1: GUI Programming</a></li>
       </ul>
     </li>
   </ol>
