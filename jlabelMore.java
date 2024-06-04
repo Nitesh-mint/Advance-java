@@ -22,9 +22,9 @@ public class jlabelMore{
 		label.setText("Hello");
 		label.setHorizontalTextPosition(JLabel.CENTER); //set text LEFT, CENTER, RIGHT of imageicon
 		label.setVerticalTextPosition(JLabel.TOP); //set text TOP BOTTOM, CENTER of 
-		label.setForeground(Color.RED); //set the font color
+		label.setForeground(Color.GREEN); //set the font color
 		label.setFont(new Font("Arial", Font.BOLD, 20)); //set font of the text
-		label.setIconTextGap(-5); //set gap between image and text
+		label.setIconTextGap(10); //set gap between image and text
 		label.setBackground(Color.black); //set background color
 		label.setOpaque(true); // display background color
 		label.setBorder(border); // set the border of the Label

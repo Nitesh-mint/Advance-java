@@ -39,7 +39,9 @@
         <ol>
             <li><a href="#Introduction-to-Swing">Introduction to Swing</a></li>
             <li><a href="#Creating-a-frame">Creating a Frame</a></li>
-            <li><a href="#Positining-a-frame">Positining a Frame</a></li>
+            <li><a href="#Positioning-a-frame">Positioning a Frame</a></li>
+            <li><a href="#Swing-JLabel">Swing JLabel</a></li>
+            <li><a href="#Swing-JPanel">Swing JPanel</a></li>
         </ol>
         </li>
       </ul>
@@ -76,17 +78,70 @@ import javax.swing.JFrame;
 
 JFrame frame = new JFrame(); //creates a frame but doesn't show up
 frame.setSize(500, 500); //sets the width and height to 500
-frame.setVisisble(true); //to make the frame visible
+frame.setVisible(true); //to make the frame visible
 
 ```
-### Positining a frame
+### Positioning a frame
 We can position a frame to the way we like using `setPosition()` method of `JFrame` class. We need to input the parameter for x-axis and y-axis
 <br>
 **Code Example**
 ```
 frame.setPosition(200, 300); //draws frame in 200px to x-axis and 300px to y-axis
 ```
-We can also set the location of the frame where it is suitable, it is done by the platform or the OS where it is being drawn. We can use `frame.setLocatoinByPlatform(true);` method.
+We can also set the location of the frame where it is suitable, it is done by the platform or the OS where it is being drawn. We can use `frame.setLocationByPlatform(true);` method.
+
+### Swing JLabel
+JLabel is a component of Swing class which is used to display text or image or both.
+We can create object of the JLabel class by importing: `import javax.swing.JLabel`
+<br>
+JLabel takes likes to take the full area of the JFrame by default.We can use different Layout type to override the default property.
+
+**Example of important methods in JLabel class**
+```
+//creating a frame
+    import javax.swing.JFrame; //for frame
+    import javax.swing.JLabel; //for label
+    import javax.swing.ImageIcon; //for image
+    import java.awt.Color; //for constant colors
+    import java.awt.Font; //for fonts
+    import javax.swing.BorderFactory; // to create a border
+    import javax.swing.border.Border; // border class
+
+		JFrame frame = new JFrame("JLabel in detail");
+		
+		//image icon
+		ImageIcon image = new ImageIcon("java_logo.png");
+		
+		//Border
+		Border border = BorderFactory.createLineBorder(Color.RED, 3);
+		
+		//JLabel codes
+		JLabel label = new JLabel();
+		label.setIcon(image);
+		label.setText("Hello");
+		label.setHorizontalTextPosition(JLabel.CENTER); //set text LEFT, CENTER, RIGHT of imageicon
+		label.setVerticalTextPosition(JLabel.TOP); //set text TOP BOTTOM, CENTER of 
+		label.setForeground(Color.RED); //set the font color
+		label.setFont(new Font("Arial", Font.BOLD, 20)); //set font of the text
+		label.setIconTextGap(-5); //set gap between image and text
+		label.setBackground(Color.black); //set background color
+		label.setOpaque(true); // display background color
+		label.setBorder(border); // set the border of the Label
+		label.setVerticalAlignment(JLabel.CENTER); //set the vertical position of both image and text
+		label.setHorizontalAlignment(JLabel.CENTER); //set the horizontal position of both imgae and text
+		label.setSize(250, 250);
+		
+		//frame code for label
+		frame.setSize(500, 400);
+		frame.add(label);
+		frame.setLayout(null); //by default java uses border layout.
+		//frame.pack(); //this will make the frame size the size of the components(i.e: responsive)
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+```
+**OUTPUT**
+
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
