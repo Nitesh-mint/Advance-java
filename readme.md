@@ -140,8 +140,8 @@ JLabel takes likes to take the full area of the JFrame by default.We can use dif
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 ```
 **OUTPUT**
-
-
+<br>
+<img src="screenshots/JLabel_output.png" width="50%">
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
