@@ -61,7 +61,7 @@ This repo contains the code written in java. It is focused in Graphical User Int
 
 This is the main section of the repo where codes and concepts are arranged in topic wise fashion.
 
-### GUI Programming
+## GUI Programming
 The main aim of this chapter is to teach how to use different components of the Java to show visual objects in the UI.
 
 ### Introduction to Swing
