@@ -99,46 +99,46 @@ JLabel takes likes to take the full area of the JFrame by default.We can use dif
 **Example of important methods in JLabel class**
 ```
 //creating a frame
-    import javax.swing.JFrame; //for frame
-    import javax.swing.JLabel; //for label
-    import javax.swing.ImageIcon; //for image
-    import java.awt.Color; //for constant colors
-    import java.awt.Font; //for fonts
-    import javax.swing.BorderFactory; // to create a border
-    import javax.swing.border.Border; // border class
-
-		JFrame frame = new JFrame("JLabel in detail");
+    JFrame frame = new JFrame();
 		
-		//image icon
-		ImageIcon image = new ImageIcon("java_logo.png");
+		ImageIcon pic = new ImageIcon("happy_emoji.png");
 		
-		//Border
-		Border border = BorderFactory.createLineBorder(Color.RED, 3);
-		
-		//JLabel codes
 		JLabel label = new JLabel();
-		label.setIcon(image);
-		label.setText("Hello");
-		label.setHorizontalTextPosition(JLabel.CENTER); //set text LEFT, CENTER, RIGHT of imageicon
-		label.setVerticalTextPosition(JLabel.TOP); //set text TOP BOTTOM, CENTER of 
-		label.setForeground(Color.RED); //set the font color
-		label.setFont(new Font("Arial", Font.BOLD, 20)); //set font of the text
-		label.setIconTextGap(-5); //set gap between image and text
-		label.setBackground(Color.black); //set background color
-		label.setOpaque(true); // display background color
-		label.setBorder(border); // set the border of the Label
-		label.setVerticalAlignment(JLabel.CENTER); //set the vertical position of both image and text
-		label.setHorizontalAlignment(JLabel.CENTER); //set the horizontal position of both imgae and text
-		label.setSize(250, 250);
+		label.setText("Hi");
+		label.setIcon(pic);
+//		label.setVerticalAlignment(JLabel.TOP);
 		
-		//frame code for label
-		frame.setSize(500, 400);
-		frame.add(label);
-		frame.setLayout(null); //by default java uses border layout.
-		//frame.pack(); //this will make the frame size the size of the components(i.e: responsive)
-		frame.setVisible(true);
+		// GUI component which functions as container for holding other components
+		JPanel redpanel = new JPanel();
+		redpanel.setBounds(0, 0, 250, 250);
+		redpanel.setBackground(Color.RED);
+		redpanel.setLayout(null); //not using any layout will not show any items even when added 
+		redpanel.add(label); //will not appear even after adding because of the null 
+		// the position of the label must be specified to make it visible using setBound() method.
+		
+		JPanel bluepanel = new JPanel();
+		bluepanel.setBounds(250, 0, 250, 250);
+		bluepanel.setBackground(Color.BLUE);
+		
+		JPanel greenpanel = new JPanel();
+		greenpanel.setBounds(0, 250, 500, 250);
+		greenpanel.setBackground(Color.GREEN);
+		greenpanel.setLayout(new BorderLayout());
+		greenpanel.add(label); // this should be added after the border definition
+		
+		frame.setTitle("JPanel Example");
+		frame.setSize(500, 500);
+		frame.setLayout(null); // using the manual layout manager
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		frame.add(redpanel);
+		frame.add(bluepanel);
+		frame.add(greenpanel);
+		
+		frame.setVisible(true);
 ```
+*When we use **BorderLayout()** as the Layout of the panel by default it will set the position of the items to Horizontally LEFT and Vertically CENTER of the Panel.*
+
 **OUTPUT**
 <br>
 <img src="screenshots/JLabel_output.png" width="50%">
