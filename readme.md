@@ -42,6 +42,7 @@
             <li><a href="#Positioning-a-frame">Positioning a Frame</a></li>
             <li><a href="#Swing-JLabel">Swing JLabel</a></li>
             <li><a href="#Swing-JPanel">Swing JPanel</a></li>
+	    <li><a href="#2D-Graphics-Shapes"> 2D Grpahics Shapes</a></li>
         </ol>
         </li>
       </ul>
