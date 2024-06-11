@@ -151,7 +151,7 @@ public class jlabelMore{
 	<img src="screenshots/JLabel_output.png" width="50%">	
 </p>
 
-### Swing JPanel
+### Swing JPanel
 ```
 //creating a frame
     JFrame frame = new JFrame();
@@ -193,8 +193,8 @@ public class jlabelMore{
 		frame.setVisible(true);
 ```
 
-<p align=“center”>
-    <img src=“screenshots/JPanel_output.png” width=“50%”>
+<p align="center">
+	<img src="screenshots/JPanel_output.png" width="50%">	
 </p>
 
 ### 2D Graphics Shapes
@@ -248,8 +248,8 @@ class CustomPanel extends JPanel {
     }
 }
 ```
-<p align=“center”>
-    <img src=“screenshots/Graphics.png” width=“50%”>
+<p align="center">
+	<img src="screenshots/Graphics.png" width="50%">	
 </p>
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
