@@ -140,11 +140,12 @@ JLabel takes likes to take the full area of the JFrame by default.We can use dif
 *When we use **BorderLayout()** as the Layout of the panel by default it will set the position of the items to Horizontally LEFT and Vertically CENTER of the Panel.*
 
 **OUTPUT**
-<br>
-<img src="screenshots/JLabel_output.png" width="50%">
-
+<be>
+<p align="center">
+	<img src="screenshots/JLabel_output.png" width="50%">	
+</p>
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[linkedin-url]: https://www.linkedin.com/in/nitesh-raya-614055249/
+
 [java-logo]: https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png
 
