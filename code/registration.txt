@@ -1,0 +1,11 @@
+
+JLabel form_heading = new JLabel("Registration Form");
+
+JLabel name = new JLabel("Name ");
+JTextField name_field = new JTextField(10);
+JLabel mobile = new JLabel("Mobile ");
+JTextField mobile_field = new JTextField(10);
+
+JLabel gender = new JLabel("Gender");
+JRadioButton male_radio = new JRadioButton("Male");
+JRadioButton female_radio = new JRadioButton("Female");
